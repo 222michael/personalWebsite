@@ -286,12 +286,12 @@ function App() {
                 
                 <div className="contact-item">
                   <span className="contact-label">LinkedIn:</span>
-                  <a href="https://linkedin.com/in/michael-caldo" target="_blank" rel="noopener noreferrer" className="contact-value">linkedin.com/in/michael-caldo</a>
+                  <a href="https://www.linkedin.com/in/michael-caldo-610409377/" target="_blank" rel="noopener noreferrer" className="contact-value">linkedin.com/in/michael-caldo-610409377</a>
                 </div>
                 
                 <div className="contact-item">
                   <span className="contact-label">GitHub:</span>
-                  <a href="https://github.com/michael-caldo" target="_blank" rel="noopener noreferrer" className="contact-value">github.com/michael-caldo</a>
+                  <a href="https://github.com/222michael" target="_blank" rel="noopener noreferrer" className="contact-value">github.com/222michael</a>
                 </div>
               </div>
               
