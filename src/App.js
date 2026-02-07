@@ -178,7 +178,6 @@ function App() {
                   <li>Full-stack employee attendance system</li>
                   <li>Real-time punch tracking, automatic hour calculations</li>
                   <li>Role-based authentication, responsive dashboards</li>
-                  <li>Live: <a href="#" className="project-link">Mini HCM - Time Tracking System</a></li>
                 </ul>
               </div>
             </div>

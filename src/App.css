@@ -6,9 +6,17 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 body {
   font-family: 'JetBrains Mono', 'Space Mono', monospace;
   overflow-x: hidden;
+  width: 100%;
 }
 
 .App {
@@ -16,6 +24,7 @@ body {
   background: linear-gradient(135deg, #0a0a0a 0%, #111111 100%);
   position: relative;
   overflow-x: hidden;
+  width: 100%;
 }
 
 /* Scanline Effect */
@@ -118,6 +127,8 @@ body {
   scroll-behavior: smooth;
   max-width: 1400px;
   margin: 0 auto;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 /* Custom Scrollbar */
@@ -390,6 +401,7 @@ body::-webkit-scrollbar-thumb:hover {
 
   .name-display {
     font-size: 2.5rem;
+    line-height: 1.2;
   }
 
   .subtitle-container {
@@ -409,15 +421,19 @@ body::-webkit-scrollbar-thumb:hover {
 
   .bio {
     font-size: 0.95rem;
+    line-height: 1.6;
   }
 
   .nav-buttons {
     gap: 0.5rem;
+    flex-wrap: wrap;
   }
 
   .nav-buttons button {
     padding: 0.6rem 1rem;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
+    flex: 1 1 calc(50% - 0.25rem);
+    min-width: 120px;
   }
 
   .content-section h2 {
@@ -427,24 +443,109 @@ body::-webkit-scrollbar-thumb:hover {
   .content-section pre {
     font-size: 0.9rem;
   }
+
+  /* Skills Grid */
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  /* Projects */
+  .project-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .project-tech {
+    font-size: 0.75rem;
+  }
+
+  /* Contact Grid */
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Education/Work Items */
+  .education-item {
+    padding: 1rem;
+  }
+
+  .edu-title {
+    font-size: 1rem;
+  }
+
+  .edu-degree {
+    font-size: 0.9rem;
+  }
 }
 
 @media (max-width: 480px) {
+  .terminal-content {
+    padding: 1.5rem 1rem;
+  }
+
   .name-display {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    line-height: 1.2;
+  }
+
+  .subtitle {
+    font-size: 1rem;
   }
 
   .nav-buttons {
     flex-direction: column;
+    width: 100%;
   }
 
   .nav-buttons button {
     width: 100%;
+    flex: none;
   }
 
   .resume-button {
     width: 100%;
     justify-content: center;
+  }
+
+  .content-section h2 {
+    font-size: 1.4rem;
+  }
+
+  .project-number {
+    font-size: 1rem;
+  }
+
+  .project-title {
+    font-size: 0.95rem;
+  }
+
+  .chatbot-button {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    bottom: 1rem;
+    right: 1rem;
+  }
+}
+
+/* Tablet Landscape */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .terminal-content {
+    padding: 3rem 2rem;
+  }
+
+  .name-display {
+    font-size: 3.5rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .nav-buttons button {
+    font-size: 0.85rem;
   }
 }
 
