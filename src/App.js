@@ -76,7 +76,7 @@ function App() {
             <div className="subtitle-container">
               <p className="subtitle">Junior Software Developer</p>
               <a 
-                href="/michaelCaldo_Resume.pdf" 
+                href="/Michael_Caldo_Resume.pdf" 
                 download="Michael_Caldo_Resume.pdf"
                 className="resume-button"
               >
@@ -271,12 +271,12 @@ function App() {
               <div className="contact-grid">
                 <div className="contact-item">
                   <span className="contact-label">Email:</span>
-                  <a href="mailto:caldomichael10@gmail.com" className="contact-value">caldomichael10@gmail.com</a>
+                  <a href="mailto:michaelcaldo0618@gmail.com" className="contact-value">michaelcaldo0618@gmail.com</a>
                 </div>
                 
                 <div className="contact-item">
                   <span className="contact-label">Phone:</span>
-                  <span className="contact-value">09939657804</span>
+                  <span className="contact-value">09106019753</span>
                 </div>
                 
                 <div className="contact-item">
